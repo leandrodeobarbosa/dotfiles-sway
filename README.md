@@ -11,10 +11,9 @@ Criado com foco em **minimalismo**, **produtividade** e uma experiência DevOps 
 ## 📸🤯 Demonstração do Workflow
 🖱️ Evite o uso do mouse. Use ⌨️ `Ctrl` + `Enter`
 
-Veja abaixo um vídeo de demonstração do ambiente em uso, alternando entre janelas, ativando atalhos de produtividade e mostrando a integração com o terminal e ferramentas gráficas.
+Demonstração do ambiente em uso, alternando entre janelas, ativando atalhos de produtividade e mostrando a integração com o terminal e ferramentas gráficas.
 
-<video src="media/demo-workflow.mp4" autoplay loop muted playsinline width="640"></video>
-
+![Demo do workflow](media/demo.gif)
 
 ## ✅ Pré-requisitos
 
