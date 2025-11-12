@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IMG_DIR=$(xdg-user-dir PICTURES)
-SCREENSHOT_DIR="~/$IMG_DIR/screenshots"
+SCREENSHOT_DIR="$IMG_DIR/screenshots"
 
 mkdir -p "$SCREENSHOT_DIR"
 
@@ -20,4 +20,3 @@ else
     notify-send "Uso: screenshot.sh [full|area]"
     exit 1
 fi
-
