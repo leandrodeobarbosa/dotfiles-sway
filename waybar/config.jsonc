@@ -63,7 +63,7 @@
             "portable": "",
             "car": "",
             "default": ["", ""]
-        },  
+        },
         "on-click": "pavucontrol"
     },
 "disk": {
@@ -89,7 +89,7 @@
 },
 
 "custom/cups": {
-    "on-click": "~/.config/waybar/scripts/cups-tray.sh",
+    "on-click": "~/dotfiles/waybar/scripts/cups-tray.sh",
     "tooltip": false,
     "format": "󰐪"
 },
@@ -137,7 +137,7 @@
 	]
 },
 "custom/update": {
-    "exec": "~/.config/waybar/scripts/updates-count.sh",
+    "exec": "~/dotfiles/waybar/scripts/updates-count.sh",
     "interval": 600,
     "return-type": "text",
     "on-click": "$TERM -e sudo dnf upgrade"
