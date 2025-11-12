@@ -10,7 +10,7 @@ set $up k
 set $right l
 
 # wallpaper
-set $wallpaper "~/wallpapers/default.jpg"
+set $wallpaper "~/wallpapers/bg.png"
 
 ### terminal emulator
 set $term alacritty
@@ -32,11 +32,9 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 exec swaymsg output HDMI-A-3 enable resolution 1920x1080 position 1920,0
 exec swaymsg output eDP-1 enable resolution 1920x1080 position 0,0
 
-
-
 ### Idle Configuration
-# This will lock your screen after 120 seconds of inactivity, then turn off your displays after another 150 seconds 
-# and turn your screens back on when resumed. 
+# This will lock your screen after 120 seconds of inactivity, then turn off your displays after another 150 seconds
+# and turn your screens back on when resumed.
 # It will also lock your screen before your computer goes to sleep.
 
 exec swayidle -w \
@@ -52,7 +50,7 @@ exec swayidle -w \
 
 
 ### Basics Keybindings
-    # Lock session    
+    # Lock session
     bindsym $mod+l exec swaylock
 
     # Start a terminal
@@ -69,12 +67,12 @@ exec swayidle -w \
 
     # VI Terminal
     bindsym $mod+bracketleft exec alacritty -e vi
-    
+
     # BitWarden
     bindsym $mod+apostrophe exec flatpak run com.bitwarden.desktop
-    
+
     # VSCode
-   bindsym $mod+c exec code 
+   bindsym $mod+c exec code
 
     # Screenshot full screen
     bindsym Print exec ~/.config/sway/scripts/screenshot.sh full
@@ -87,6 +85,7 @@ exec swayidle -w \
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
 
 # Moving around:
     # Move your focus around
@@ -150,7 +149,7 @@ exec swayidle -w \
     bindsym $mod+a focus parent
 
 ### Scratchpad:
-# Sway has a "scratchpad", which is a bag of holding for windows. 
+# Sway has a "scratchpad", which is a bag of holding for windows.
 # You can send windows there and get them back later.
 
     # Move the currently focused window to the scratchpad
@@ -203,5 +202,3 @@ gaps outer 7
 set $WAYLAND_DISPLAY wayland-0
 ### disable startup notifications (X11 via D-Bus)
 exec --no-startup-id waybar
-
-
